@@ -16,5 +16,14 @@ namespace PresentacionCalzadoFerreti
         {
             InitializeComponent();
         }
+
+        private void tTiempo_Tick(object sender, EventArgs e)
+        {
+
+        }
+        #region Funciones Principal
+
+
+        #endregion
     }
 }
