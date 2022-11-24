@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.2.32516.85
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentacionCalzadoFerreti", "PresentacionCalzadoFerreti\PresentacionCalzadoFerreti.csproj", "{F209E0B7-F231-414E-A126-92925F53CF5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntidadesCalzadoFerreti", "EntidadesCalzadoFerreti\EntidadesCalzadoFerreti.csproj", "{47EAD40F-9418-45B4-9E07-F64CA78F0CA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F209E0B7-F231-414E-A126-92925F53CF5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F209E0B7-F231-414E-A126-92925F53CF5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F209E0B7-F231-414E-A126-92925F53CF5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47EAD40F-9418-45B4-9E07-F64CA78F0CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47EAD40F-9418-45B4-9E07-F64CA78F0CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47EAD40F-9418-45B4-9E07-F64CA78F0CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47EAD40F-9418-45B4-9E07-F64CA78F0CA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
