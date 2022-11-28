@@ -5,7 +5,7 @@ namespace AccesoDatosCalzadoFerreti
 {
     public class AccesoPendientesEntregar 
     {
-        Base b = new Base("localhost", "root", "", "");
+        Base b = new Base("localhost", "root", "", "calzadoferreti");
 
         public void Borrar(dynamic Entidad)
         {
