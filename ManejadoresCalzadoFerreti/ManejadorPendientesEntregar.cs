@@ -30,8 +30,8 @@ namespace ManejadoresCalzadoFerreti
             tabla.Columns.Clear();
             tabla.RowTemplate.Height = 30;
             tabla.DataSource = ap.Mostrar(filtro).Tables["pendientesentregar"];
-            tabla.Columns.Insert(3, g.Boton("Editar", Color.Green));
-            tabla.Columns.Insert(4, g.Boton("Borrar", Color.Red));
+            //tabla.Columns.Insert(3, g.Boton("Editar", Color.Green));
+            //tabla.Columns.Insert(4, g.Boton("Borrar", Color.Red));
             tabla.AutoResizeColumns();
         }
     }

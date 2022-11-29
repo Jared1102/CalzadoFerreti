@@ -30,8 +30,8 @@ namespace ManejadoresCalzadoFerreti
             tabla.Columns.Clear();
             tabla.RowTemplate.Height = 30;
             tabla.DataSource = ai.Mostrar(filtro).Tables["insumos"];
-            tabla.Columns.Insert(5, g.Boton("Editar", Color.Green));
-            tabla.Columns.Insert(6, g.Boton("Borrar", Color.Red));
+            //tabla.Columns.Insert(5, g.Boton("Editar", Color.Green));
+            //tabla.Columns.Insert(6, g.Boton("Borrar", Color.Red));
             tabla.AutoResizeColumns();
         }
     }

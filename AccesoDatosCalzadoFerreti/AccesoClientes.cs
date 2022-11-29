@@ -14,12 +14,12 @@ namespace AccesoDatosCalzadoFerreti
 
         public void Guardar(dynamic Entidad)
         {
-            b.Comando(String.Format("call p_insertOrUpdateSalidas({0},'{1}','{2}','{3}','{4}')", Entidad.IdCliente, Entidad.Nombre, Entidad.Telefono, Entidad.Correo, Entidad.Direccion));
+            b.Comando(String.Format("call p_insertOrUpdateClientes({0},'{1}','{2}','{3}','{4}')", Entidad.IdCliente, Entidad.Nombre, Entidad.Telefono, Entidad.Correo, Entidad.Direccion));
         }
 
         public DataSet Mostrar(string filtro)
         {
-            return b.Obtener(string.Format("p_showClientes('%{0}%')", filtro), "clientes");
+            return b.Obtener(string.Format("call p_showClientes('%{0}%')", filtro), "clientes");
         }
     }
 }

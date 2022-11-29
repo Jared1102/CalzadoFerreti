@@ -19,7 +19,7 @@ namespace AccesoDatosCalzadoFerreti
 
         public DataSet Mostrar(string filtro)
         {
-            return b.Obtener(string.Format("p_showCompras('%{0}%')", filtro), "compras");
+            return b.Obtener(string.Format("call p_showCompras('%{0}%')", filtro), "compras");
         }
     }
 }

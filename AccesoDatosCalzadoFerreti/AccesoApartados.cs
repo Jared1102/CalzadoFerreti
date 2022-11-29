@@ -17,9 +17,9 @@ namespace AccesoDatosCalzadoFerreti
             b.Comando(String.Format("call p_insertOrUpdateApartados({0},{1},{2})", Entidad.FkIdVenta, Entidad.FkIdCalzado, Entidad.CantidadApartada));
         }
 
-        public DataSet Mostrar(int filtro)
+        public DataSet Mostrar(string filtro)
         {
-            return b.Obtener(string.Format("p_showApartados({0})", filtro), "apartados");
+            return b.Obtener(string.Format("call p_showApartados('%{0}%')", filtro), "apartados");
         }
     }
 }

@@ -30,8 +30,18 @@ namespace ManejadoresCalzadoFerreti
             tabla.Columns.Clear();
             tabla.RowTemplate.Height = 30;
             tabla.DataSource = av.Mostrar(filtro).Tables["ventas"];
-            tabla.Columns.Insert(6, g.Boton("Editar", Color.Green));
-            tabla.Columns.Insert(7, g.Boton("Borrar", Color.Red));
+            tabla.Columns.Insert(6, g.Boton("Ver PDF", Color.Red));
+            tabla.Columns.Insert(7, g.Boton("$", Color.Green));
+            tabla.Columns.Insert(8, g.Boton("Borrar", Color.Green));
+            tabla.AutoResizeColumns();
+        }
+        public void Mostrar2(DataGridView tabla, string filtro)
+        {
+            tabla.Columns.Clear();
+            tabla.RowTemplate.Height = 30;
+            tabla.DataSource = av.Mostrar(filtro).Tables["ventas"];
+            tabla.Columns.Insert(6, g.Boton("Surtir", Color.Blue));
+            tabla.Columns.Insert(7, g.Boton("Ver Salidas", Color.Green));
             tabla.AutoResizeColumns();
         }
     }

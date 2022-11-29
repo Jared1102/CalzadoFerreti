@@ -30,8 +30,8 @@ namespace ManejadoresCalzadoFerreti
             tabla.Columns.Clear();
             tabla.RowTemplate.Height = 30;
             tabla.DataSource = am.Mostrar(filtro).Tables["movimientosventa"];
-            tabla.Columns.Insert(7, g.Boton("Editar", Color.Green));
-            tabla.Columns.Insert(8, g.Boton("Borrar", Color.Red));
+            //tabla.Columns.Insert(7, g.Boton("Editar", Color.Green));
+            //tabla.Columns.Insert(8, g.Boton("Borrar", Color.Red));
             tabla.AutoResizeColumns();
         }
     }
